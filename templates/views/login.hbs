@@ -1,0 +1,47 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active">
+      <a href="/login">
+        LOGI IN</a>
+    </h2>
+    <h2 class="inactive underlineHover"><a href="/register">
+        REGISTER</a></h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img
+        src="https://tse1.mm.bing.net/th?id=OIP.mKYFJK09AkSMdm5n_G20ngHaHa&pid=Api&P=0&w=300&h=300"
+        id="icon"
+        alt="User Icon"
+      />
+    </div>
+
+    <!-- Login Form -->
+    <form action="/login" method="POST">
+      <input
+        type="text"
+        {{! id="login" }}
+        class="fadeIn second"
+        name="email"
+        placeholder="Email"
+      />
+      <input
+        type="text"
+        {{! id="login" }}
+        class="fadeIn third"
+        name="password"
+        placeholder="password"
+      />
+      <input type="submit" class="fadeIn fourth" value="Log In" />
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+
+<link rel="stylesheet" href="css/register.css" />

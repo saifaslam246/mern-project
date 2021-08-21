@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+  </head>
+  <body>
+     {{>navbar}}
+    <div class="signup-form">
+      <form method="post" action="/register" class="form-horizontal">
+        <div class="col-xs-8 col-xs-offset-4">
+          <h2>Sign Up</h2>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-4">Username</label>
+          <div class="col-xs-8">
+            <input
+              type="text"
+              class="form-control"
+              name="Username"
+              required="required"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-4">email</label>
+          <div class="col-xs-8">
+            <input
+              type="Email"
+              class="form-control"
+              name="email"
+              required="required"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-4">password</label>
+          <div class="col-xs-8">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              required="required"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-4">confermpassword</label>
+          <div class="col-xs-8">
+            <input
+              type="password"
+              class="form-control"
+              name="confermpassword"
+              required="required"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-8 col-xs-offset-4">
+            <button type="submit" class="btn btn-primary btn-lg" value="Register">Register</button>
+          </div>
+        </div>
+      </form>
+      <div class="text-center">Already have an account?
+        <a href="/login">Login here</a></div>
+    </div>
+  </body>
+</html>
